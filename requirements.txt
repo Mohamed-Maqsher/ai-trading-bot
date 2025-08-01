@@ -1,0 +1,13 @@
+ccxt
+alpaca-trade-api
+yfinance
+pandas
+numpy
+scikit-learn
+matplotlib
+joblib
+schedule
+python-dotenv
+tensorflow
+streamlit
+python-telegram-bot
