@@ -63,7 +63,7 @@ def run_bot():
 
         if sma_short > sma_long:
             logging.info(f"📈 Buying ${MAX_TRADE_AMOUNT:.2f} worth of {symbol}")
-            order = exchange.create_order(symbol, 'market', 'buy', None, MAX_TRADE_AMOUNT)
+            order = exchange.create_order(symbol, 'market', 'buy', None, {'cost': MAX_TRADE_AMOUNT})
             logging.info(f"✅ Order placed: {order}")
             send_telegram_message(f"📈 TRADE ALERT: Bought ${MAX_TRADE_AMOUNT:.2f} of {symbol} at ${last_price:.2f}")
 
