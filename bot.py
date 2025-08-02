@@ -20,7 +20,7 @@ exchange = ccxt.coinbase({
     'secret': COINBASE_PRIVATE_KEY
 })
 
-symbol = 'BTC/USD'
+symbol = 'ETH/USD'
 
 def send_telegram_message(message):
     try:
